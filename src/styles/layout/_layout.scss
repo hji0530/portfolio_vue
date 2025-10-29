@@ -182,7 +182,7 @@
   background: #000;
 
   .work-inner-grp {
-    padding: 70px 20px 100px;
+    padding: 60px 20px 100px;
     border-radius: 0 0 50px 50px;
     background: #fff;
 
@@ -285,4 +285,109 @@
 }
 
 .skills-sec {
+  padding: 100px 0;
+  background: #000;
+  @include tablet {
+    padding: 70px 0;
+  }
+  @include mobile {
+    padding: 50px 0;
+  }
+
+  .skills-list-grp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 25px;
+    @include tablet {
+      gap: 17px;
+    }
+    @include mobile {
+      gap: 12px;
+      padding-top: 10px;
+    }
+  }
+
+  .skills-list {
+    padding: 50px 40px 40px;
+    border-radius: 32px;
+    background: #1e1e1e;
+    @include tablet {
+      padding: 35px 25px 25px;
+      border-radius: 22px;
+    }
+    @include media(640px) {
+      padding: 25px 15px 20px;
+      border-radius: 14px;
+    }
+    @include media(500px) {
+      width: 100%;
+    }
+
+    .skill-title {
+      margin-bottom: 10px;
+      font-size: rem(22);
+      @include tablet {
+        margin-bottom: 8px;
+        font-size: rem(18);
+      }
+    }
+
+    .skill-txt {
+      font-size: rem(16);
+      color: #aaaaaa;
+      @include tablet {
+        font-size: rem(14);
+      }
+    }
+  }
+
+  .skill-icon-grp {
+    gap: 30px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    @include tablet {
+      gap: 20px;
+    }
+    @include media(640px) {
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    @include mobile {
+      gap: 6px;
+    }
+
+    .skill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      background: #141414;
+      @include tablet {
+        width: 60px;
+        height: 60px;
+      }
+      @include mobile {
+        width: 40px;
+        height: 40px;
+      }
+
+      .skill-img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        @include tablet {
+          width: 35px;
+          height: 35px;
+        }
+        @include mobile {
+          width: 23px;
+          height: 23px;
+        }
+      }
+    }
+  }
 }

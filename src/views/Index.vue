@@ -59,7 +59,7 @@
           </div>
           <p class="sub-txt f-bk f-r f-center" data-aos="fade-up" data-aos-delay="100">
             안녕하세요! 저는 변화하는 웹 퍼블리셔 김현지입니다.<br />
-            현실에 안주 하지 않고, <br class="mb-show" />모두가 함께 함께 성장하는 것을 지양합니다. <br />
+            현실에 안주하지 않고, <br class="mb-show" />모두가 함께 함께 성장하는 것을 지양합니다. <br />
             친절함과 즐거움 속에서 함께 성장해 나가고 싶습니다.
           </p>
 
@@ -127,9 +127,100 @@
       <!-- MY SKILLS -->
       <div class="skills-sec">
         <div class="l-center">
-          <p class="top-title f-bk f-b f-pop f-center" data-aos="fade-up">Skills</p>
+          <p class="top-title f-wh f-b f-pop f-center" data-aos="fade-up">Skills</p>
           <div class="skills-list-grp">
-            <div class="skills-list"></div>
+            <div class="skills-list" data-aos="fade-up">
+              <!-- 아이콘 그룹 -->
+              <div class="skill-icon-grp flex">
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_html5.svg" alt="skill" class="skill-img" />
+                </div>
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_css3.svg" alt="skill" class="skill-img" />
+                </div>
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_sass.svg" alt="skill" class="skill-img" />
+                </div>
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_javascript.svg" alt="skill" class="skill-img" />
+                </div>
+              </div>
+
+              <p class="skill-title f-wh f-b">언어</p>
+              <p class="skill-txt f-r f-pop">HTML5, CSS3, SCSS, JavaScript</p>
+            </div>
+
+            <div class="skills-list" data-aos="fade-up">
+              <!-- 아이콘 그룹 -->
+              <div class="skill-icon-grp flex">
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_vue.svg" alt="skill" class="skill-img" />
+                </div>
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_nextjs.svg" alt="skill" class="skill-img" />
+                </div>
+              </div>
+
+              <p class="skill-title f-wh f-b">프레임워크</p>
+              <p class="skill-txt f-r f-pop">Vue.js (Vue 2, Vue 3), Nuxt</p>
+            </div>
+
+            <div class="skills-list" data-aos="fade-up">
+              <!-- 아이콘 그룹 -->
+              <div class="skill-icon-grp flex">
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_tailwindcss.svg" alt="skill" class="skill-img" />
+                </div>
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_jquery.svg" alt="skill" class="skill-img" />
+                </div>
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_gsap.svg" alt="skill" class="skill-img" />
+                </div>
+              </div>
+
+              <p class="skill-title f-wh f-b">라이브러리</p>
+              <p class="skill-txt f-r f-pop">Tailwind CSS, jQuery, GSAP</p>
+            </div>
+
+            <div class="skills-list" data-aos="fade-up">
+              <!-- 아이콘 그룹 -->
+              <div class="skill-icon-grp flex">
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_vscode.svg" alt="skill" class="skill-img" />
+                </div>
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_git.svg" alt="skill" class="skill-img" />
+                </div>
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_github.svg" alt="skill" class="skill-img" />
+                </div>
+              </div>
+
+              <p class="skill-title f-wh f-b">개발 환경</p>
+              <p class="skill-txt f-r f-pop">VS Code, GitLab, Github</p>
+            </div>
+
+            <div class="skills-list" data-aos="fade-up">
+              <!-- 아이콘 그룹 -->
+              <div class="skill-icon-grp flex">
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_figma.svg" alt="skill" class="skill-img" />
+                </div>
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_xd.svg" alt="skill" class="skill-img" />
+                </div>
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_ps.svg" alt="skill" class="skill-img" />
+                </div>
+                <div class="skill">
+                  <img src="@/assets/images/icon/icon_ai.svg" alt="skill" class="skill-img" />
+                </div>
+              </div>
+
+              <p class="skill-title f-wh f-b">디자인 툴</p>
+              <p class="skill-txt f-r f-pop">Figma, Adobe XD, Photoshop, Illustrator</p>
+            </div>
           </div>
         </div>
       </div>
