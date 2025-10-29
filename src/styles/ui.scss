@@ -10,6 +10,11 @@
 @import 'base/fonts';
 @import 'base/helper';
 
-// 3. layout
+// 3. component
+@import 'component/button';
+@import 'component/icon';
+
+// 4. layout
 @import 'layout/layout';
 @import 'layout/common';
+@import 'layout/header';

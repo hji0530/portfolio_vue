@@ -1,0 +1,155 @@
+.portfolio-header {
+  z-index: 20;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(#a4a4a4, 0.12);
+  transition: all 0.2s;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  @include tablet {
+    height: 60px;
+  }
+
+  &.is-active {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(9px);
+
+    .hd-title {
+      color: #000;
+    }
+
+    .gnb-list-grp {
+      &:hover {
+        .gnb {
+          color: rgba(#000, 0.6);
+        }
+      }
+      .gnb {
+        color: #000;
+        &:hover {
+          color: #fd6f00;
+        }
+      }
+    }
+
+    .btn-hd-contact {
+      background: rgba(#000, 0.8);
+    }
+
+    .hamburger {
+      .bar {
+        background-color: #000;
+      }
+    }
+  }
+
+  .hd-inner-grp {
+    gap: 20px;
+    width: 100%;
+    padding: 0 48px;
+
+    @include media(1200px) {
+      padding: 0 20px;
+    }
+  }
+
+  .hd-title {
+    font-size: rem(21);
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    @include tablet {
+      font-size: rem(18);
+    }
+  }
+
+  .gnb-list-grp {
+    align-items: center;
+    gap: 30px;
+    &:hover {
+      .gnb {
+        color: rgba(#fff, 0.55);
+      }
+    }
+
+    .gnb {
+      font-family: 'Poppins', sans-serif;
+      font-size: rem(16);
+      letter-spacing: -0.1px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      white-space: nowrap;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .btn-hd-contact {
+    gap: 8px;
+    height: 38px;
+    padding: 0 15px;
+    border-radius: 32px;
+    border: 1px solid rgba(#e5e7eb, 0.3);
+    background: rgba(#000, 0.4);
+    backdrop-filter: blur(9px);
+    font-size: rem(16);
+    color: #fff;
+    transition: all 0.3s;
+
+    .icon-arrow-right {
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      color: #000;
+      background: #fff;
+
+      .icon-arrow-right {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15.811' height='12.121' viewBox='0 0 15.811 12.121'%3E%3Cg id='그룹_28572' data-name='그룹 28572' transform='translate(0.75 1.061)'%3E%3Cline id='선_1' data-name='선 1' x2='14' transform='translate(0 5)' fill='none' stroke='%23000' stroke-linecap='round' stroke-width='1.5'/%3E%3Cg id='그룹_28566' data-name='그룹 28566' transform='translate(9)'%3E%3Cline id='선_2' data-name='선 2' x2='5' y2='5' fill='none' stroke='%23000' stroke-linecap='round' stroke-width='1.5'/%3E%3Cline id='선_3' data-name='선 3' y1='5' x2='5' transform='translate(0 5)' fill='none' stroke='%23000' stroke-linecap='round' stroke-width='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+        animation-name: horizontal-scroll;
+        animation-duration: 0.7s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-fill-mode: backwards;
+      }
+    }
+  }
+
+  .hamburger {
+    position: relative;
+    width: 20px;
+    height: 16px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    &:hover {
+      .bar-top {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .bar-mid {
+        opacity: 0;
+      }
+      .bar-bot {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+    }
+
+    .bar {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+      transform-origin: center;
+    }
+  }
+}

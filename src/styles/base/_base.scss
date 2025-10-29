@@ -144,7 +144,7 @@ wbr {
   box-sizing: border-box;
   font-size: 100%;
   font: inherit;
-  font-family: "pretendard", sans-serif;
+  font-family: 'pretendard', sans-serif;
   word-break: break-all;
   letter-spacing: -0.04em;
 }
@@ -227,6 +227,21 @@ html {
   -webkit-text-size-adjust: 100%;
   word-break: keep-all;
   font-size: 16px;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 20%;
+    background: #fd6f00;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  // &::-webkit-scrollbar-track {
+  //   background: #000;
+  // }
 }
 
 a {
