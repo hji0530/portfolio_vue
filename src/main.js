@@ -4,7 +4,6 @@ import router from './router';
 
 Vue.config.productionTip = false;
 import VueAwesomeSwiper from 'vue-awesome-swiper';
-
 import 'swiper/css/swiper.css';
 
 Vue.use(VueAwesomeSwiper);

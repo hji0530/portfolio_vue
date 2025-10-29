@@ -8,7 +8,7 @@
         <div class="gnb-list-grp flex tab-hide">
           <div class="gnb">Intro</div>
           <div class="gnb">About Me</div>
-          <div class="gnb">Portfolio</div>
+          <div class="gnb">Work</div>
           <div class="gnb">Experience & Skills</div>
         </div>
 
@@ -27,7 +27,7 @@
         <div class="mo-gnb-list-grp">
           <div class="mo-gnb">Intro</div>
           <div class="mo-gnb">About Me</div>
-          <div class="mo-gnb">Portfolio</div>
+          <div class="mo-gnb">Work</div>
           <div class="mo-gnb">Experience & Skills</div>
         </div>
 
@@ -53,17 +53,17 @@
       <!-- About me -->
       <div class="about-sec">
         <div class="about-inner-grp l-center">
-          <p class="top-title f-bk f-b f-pop f-center">About Me</p>
-          <div class="emoticon-img-grp">
+          <p class="top-title f-bk f-b f-pop f-center" data-aos="fade-up">About Me</p>
+          <div class="emoticon-img-grp" data-aos="fade-up" data-aos-delay="50">
             <img src="@/assets/images/img_emoticon_01.png" alt="이모티콘 이미지" class="emoticon-img" />
           </div>
-          <p class="sub-txt f-bk f-r f-center">
+          <p class="sub-txt f-bk f-r f-center" data-aos="fade-up" data-aos-delay="100">
             안녕하세요! 저는 변화하는 웹 퍼블리셔 김현지입니다.<br />
             현실에 안주 하지 않고, <br class="mb-show" />모두가 함께 함께 성장하는 것을 지양합니다. <br />
             친절함과 즐거움 속에서 함께 성장해 나가고 싶습니다.
           </p>
 
-          <div class="about-list-grp flex">
+          <div class="about-list-grp flex" data-aos="fade-up">
             <div class="list-card hover-effect">
               <p class="point-txt f-b">point 01</p>
               <p class="card-title f-b">멈추지 않는 열정 보유</p>
@@ -92,10 +92,35 @@
         </div>
       </div>
 
-      <!-- PORTFOLIO -->
-      <div class="portfolio-sec">
-        <div class="portfolio-inner-grp l-center">
-          <p class="top-title f-bk f-b f-pop f-center">Portfolio</p>
+      <!-- WORK -->
+      <div class="work-sec">
+        <div class="work-inner-grp l-center">
+          <p class="top-title f-bk f-b f-pop f-center" data-aos="fade-up">Work</p>
+          <div class="work-list-grp" data-aos="fade-up">
+            <div class="work-card" v-for="item in projects" :key="item.title">
+              <div class="work-thumb">
+                <img :src="item.thumb" :alt="item.title" />
+              </div>
+              <div class="work-content">
+                <h3 class="work-title">{{ item.title }}</h3>
+                <p class="work-stack">{{ item.stack }}</p>
+                <ul class="work-desc">
+                  <li v-for="desc in item.desc" :key="desc">{{ desc }}</li>
+                </ul>
+                <div class="work-links">
+                  <a v-if="item.url" :href="item.url" target="_blank" class="btn btn-link hover-effect"
+                    >Website <i class="icon icon-arrow-diagonal"></i
+                  ></a>
+                  <a v-if="item.sub1" :href="item.sub1" target="_blank" class="btn btn-link hover-effect"
+                    >Sub1 <i class="icon icon-arrow-diagonal"></i
+                  ></a>
+                  <a v-if="item.sub2" :href="item.sub2" target="_blank" class="btn btn-link hover-effect"
+                    >Sub2 <i class="icon icon-arrow-diagonal"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -118,6 +143,66 @@ export default {
     return {
       mobileGnbShow: false,
       scrolled: false,
+
+      projects: [
+        {
+          title: '자사 홈페이지 Website (Vue3 + Nuxt 전환)',
+          stack: 'Vue3, Nuxt, SCSS, HTML',
+          desc: [
+            'Vue2 기반 홈페이지를 Vue3 + Nuxt로 마이그레이션하며 SCSS 퍼블 구조 세팅 및 컴포넌트 정리 담당',
+            '웨비나, 성공사례 등 신규 페이지 추가 및 리뉴얼 퍼블리싱 전담',
+          ],
+          url: 'https://xn--9i1b674cwc38r6pa.com/',
+          thumb: '',
+        },
+        {
+          title: '프래빗 반응형 웹 퍼블리싱',
+          stack: 'HTML5, SCSS, GSAP',
+          desc: ['국문/영문 반응형 웹사이트를 2주 내 단독 완성', '다양한 Swiper/GSAP 인터랙션 구현'],
+          url: 'https://prabbit.co.kr/',
+          thumb: '',
+        },
+        {
+          title: '앰버로드 반응형 웹 퍼블리싱',
+          stack: 'Vue2, SCSS',
+          desc: [
+            '초기 70% 담당, 리뉴얼 100% 단독 진행',
+            '반응형 및 주요 인터랙션 구현',
+            '높은 완성도로 동일 계열사 추가 의뢰(포솔이노텍)',
+          ],
+          url: 'https://amberroad.ai/',
+          thumb: '',
+        },
+        {
+          title: '포솔이노텍 반응형 웹 퍼블리싱',
+          stack: 'Vue2, SCSS',
+          desc: [
+            '한국어 80%, 영문 100% 퍼블리싱 담당',
+            'PC/Mobile 반응형 구현',
+            '앰버로드 완성도로 동일 계열사 추가 진행',
+          ],
+          url: 'https://www.possol.kr/',
+          thumb: '',
+        },
+        {
+          title: '자사 포트폴리오 랜딩페이지 퍼블리싱싱',
+          stack: 'HTML5, SCSS',
+          desc: ['포트폴리오 내 일부 프로젝트 퍼블리싱 참여', 'PC/Mobile 반응형 구현'],
+          sub1: 'https://portfolio.xn--9i1b674cwc38r6pa.com/golerobotics',
+          sub2: 'https://portfolio.xn--9i1b674cwc38r6pa.com/amberroad',
+          thumb: '',
+        },
+        {
+          title: '자사 CRM (업무 중심형 UI)',
+          stack: 'Vue2, SCSS, Tailwind',
+          desc: [
+            '기존 비반응형 페이지를 반응형으로 전환',
+            '자료실, 단체 메일 전송, 웨비나 등 신규 페이지 퍼블리싱',
+            '프론트엔드 개발자와 GitLab 협업 진행',
+          ],
+          thumb: '',
+        },
+      ],
     };
   },
   mounted() {
