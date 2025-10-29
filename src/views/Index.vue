@@ -9,7 +9,7 @@
           <div class="gnb">Intro</div>
           <div class="gnb">About Me</div>
           <div class="gnb">Work</div>
-          <div class="gnb">Experience & Skills</div>
+          <div class="gnb">Skills</div>
         </div>
 
         <button class="btn btn-hd-contact f-pop f-m f-ws-n tab-hide">
@@ -222,6 +222,39 @@
               <p class="skill-txt f-r f-pop">Figma, Adobe XD, Photoshop, Illustrator</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="contact-sec">
+        <div class="xl-center">
+          <p class="top-title f-bk f-b f-pop" data-aos="fade-up">Contact</p>
+          <p class="sub-txt f-bk f-r" data-aos="fade-up" data-aos-delay="100">
+            끝까지 저의 포트폴리오를 관심있게 봐주셔서 감사합니다.<br />
+            저와 나누고 싶으신 말씀이 있으시다면 언제든 연락 주세요!
+          </p>
+          <div class="resume-grp">
+            <div class="line"></div>
+            <button class="btn btn-resume f-wh f-s ani-dongdong hover-effect tab-hide">이력서 다운로드</button>
+          </div>
+          <div class="contact-list-grp flex items-c">
+            <div class="contact-list" data-aos="fade-up">
+              <p class="label f-pop">Email:</p>
+              <p class="contact f-pop">hji0530kim@gmail.com</p>
+            </div>
+            <div class="contact-list" data-aos="fade-up" data-aos-delay="100">
+              <p class="label f-pop">Phone</p>
+              <p class="contact f-pop">010-8388-9721</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-sec tab-show pos-r">
+        <div class="xl-center">
+          <p class="resume-sub-txt f-wh f-r">RESUME DOWNLOAD</p>
+          <p class="resume-title f-wh f-b">이력서 다운로드</p>
+          <button class="btn btn-resume-arrow"><i class="icon icon-arrow-corner-right"></i></button>
         </div>
       </div>
     </div>

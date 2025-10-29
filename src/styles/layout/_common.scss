@@ -6,6 +6,14 @@
   min-height: 100vh;
 }
 
+.xl-center {
+  width: 100%;
+  max-width: 1680px;
+  /* 1650px */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .l-center {
   width: 100%;
   max-width: 1472px;
@@ -297,4 +305,23 @@
     transform: skew(-30deg);
     transition: all 0.6s;
   }
+}
+
+// dongdong
+@keyframes dongdong {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.ani-dongdong {
+  animation-name: dongdong;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
