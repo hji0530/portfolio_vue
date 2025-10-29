@@ -9,9 +9,4 @@
   width: 16px;
   height: 13px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15.811' height='12.121' viewBox='0 0 15.811 12.121'%3E%3Cg id='그룹_28572' data-name='그룹 28572' transform='translate(0.75 1.061)'%3E%3Cline id='선_1' data-name='선 1' x2='14' transform='translate(0 5)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='1.5'/%3E%3Cg id='그룹_28566' data-name='그룹 28566' transform='translate(9)'%3E%3Cline id='선_2' data-name='선 2' x2='5' y2='5' fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='1.5'/%3E%3Cline id='선_3' data-name='선 3' y1='5' x2='5' transform='translate(0 5)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
-
-  @include tablet {
-    width: 12px;
-    height: 10px;
-  }
 }
