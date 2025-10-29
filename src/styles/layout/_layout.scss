@@ -187,10 +187,11 @@
     background: #fff;
 
     @include tablet {
-      border-radius: 40px 40px 0 0;
+      padding: 10px 20px 50px;
+      border-radius: 0 0 40px 40px;
     }
     @include mobile {
-      border-radius: 30px 30px 0 0;
+      border-radius: 0 0 30px 30px;
     }
   }
 
@@ -201,6 +202,12 @@
     width: 100%;
     max-width: 1100px;
     margin: 30px auto 0;
+    @include media(1200px) {
+      gap: 20px;
+    }
+    @include mobile {
+      gap: 15px;
+    }
 
     .work-card {
       width: calc((100% - 50px) / 3);
@@ -209,6 +216,13 @@
       border-radius: 16px;
       overflow: hidden;
       transition: all 0.3s ease;
+
+      @include media(1200px) {
+        width: calc((100% - 20px) / 2);
+      }
+      @include mobile {
+        width: 100%;
+      }
 
       &:hover {
         transform: translateY(-6px);
@@ -268,4 +282,7 @@
       }
     }
   }
+}
+
+.skills-sec {
 }

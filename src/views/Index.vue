@@ -125,7 +125,14 @@
       </div>
 
       <!-- MY SKILLS -->
-      <div class="skills-sec"></div>
+      <div class="skills-sec">
+        <div class="l-center">
+          <p class="top-title f-bk f-b f-pop f-center" data-aos="fade-up">Skills</p>
+          <div class="skills-list-grp">
+            <div class="skills-list"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
