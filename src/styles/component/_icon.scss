@@ -1,0 +1,6 @@
+.icon {
+  @include bg-op($s: contain, $p: center);
+
+  display: inline-block;
+  vertical-align: middle;
+}

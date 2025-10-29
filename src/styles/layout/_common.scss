@@ -1,0 +1,267 @@
+.is-none {
+  display: none !important;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.l-center {
+  width: 100%;
+  max-width: 1472px;
+  /* 1440px */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.m-center {
+  width: 100%;
+  max-width: 1270px;
+  /* 1240px */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.is-none {
+  display: none !important;
+}
+
+// position ====================
+.pos-r {
+  position: relative;
+}
+
+.pos-a {
+  position: absolute;
+}
+
+.pos-f {
+  position: fixed;
+}
+
+// flex ====================
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.i-block {
+  display: inline-block;
+}
+
+.flex-s-0 {
+  flex-shrink: 0;
+}
+
+.items-s {
+  align-items: flex-start;
+}
+
+.items-c {
+  align-items: center;
+}
+
+.items-e {
+  align-items: flex-end;
+}
+
+.items-t {
+  align-items: stretch;
+}
+
+.justify-s {
+  justify-content: flex-start;
+}
+
+.justify-c {
+  justify-content: center;
+}
+
+.justify-b {
+  justify-content: space-between;
+}
+
+.justify-e {
+  justify-content: flex-end !important;
+}
+
+.flex-d-c {
+  flex-direction: column;
+}
+
+.flex-w {
+  flex-wrap: wrap;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+// width ====================
+.w-full {
+  width: 100% !important;
+}
+
+.w-half {
+  width: calc(100% / 2);
+}
+
+// margin ====================
+.m-auto {
+  margin: 0 auto;
+}
+// font color ====================
+
+.f-bk {
+  color: #000;
+}
+
+.f-wh {
+  color: #fff;
+}
+
+// font weight ====================
+.f-e {
+  font-weight: 800;
+}
+
+.f-b {
+  font-weight: 700;
+}
+
+.f-s {
+  font-weight: 600;
+}
+
+.f-m {
+  font-weight: 500;
+}
+
+.f-r {
+  font-weight: 400;
+}
+
+.f-l {
+  font-weight: 300;
+}
+
+.f-x {
+  font-weight: 200;
+}
+
+.f-center {
+  text-align: center;
+}
+
+.f-end {
+  text-align: end;
+}
+
+// font family ====================
+.f-pop {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.f-span {
+  vertical-align: bottom;
+}
+
+.f-under {
+  text-decoration: underline;
+}
+
+.f-pre {
+  white-space: pre-line;
+}
+
+// img ====================
+.img-con {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.img-cov {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =================== animation =================== */
+
+// 화살표 가로 애니메이션
+.scroll-horizontal-img {
+  animation-name: horizontal-scroll;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+@keyframes horizontal-scroll {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+
+  40% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0.3;
+    transform: translateX(30%);
+  }
+}
+
+// 화살표 세로 애니메이션
+.scroll-vertical-img {
+  animation-name: vertical-scroll;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+
+  @keyframes vertical-scroll {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-20%);
+      transform: translateY(-20%);
+    }
+
+    40% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%);
+    }
+
+    100% {
+      opacity: 0.3;
+      -webkit-transform: translateY(20%);
+      transform: translateY(20%);
+    }
+  }
+}
+
+// dongdong
+@keyframes dongdong {
+  0% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.ani-dongdong {
+  animation-name: dongdong;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

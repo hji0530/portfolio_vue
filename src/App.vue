@@ -12,5 +12,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/style/ui.scss';
+@import '@/styles/ui.scss';
 </style>
